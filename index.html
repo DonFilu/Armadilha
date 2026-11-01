@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Alerta | Proteção de crianças</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100dvh;background:#09090c;color:#f4f4f5;font-family:system-ui,-apple-system,Segoe UI,sans-serif;display:grid;place-items:center;padding:24px}
+main{width:min(100%,600px);text-align:center} .shield{font-size:64px;color:#ef4444}h1{font-size:clamp(40px,8vw,72px);letter-spacing:-.06em;color:#ef4444;margin:12px 0}h2{font-size:clamp(21px,4vw,29px);line-height:1.25}p{color:#b4b4bd;line-height:1.65}.ip{margin:28px 0;padding:24px 10px;border:1px solid #743039;background:#1b1015;border-radius:18px;overflow-wrap:anywhere}.ip small{display:block;color:#b4b4bd;letter-spacing:.12em;font-size:12px;margin-bottom:12px}.ip strong{color:#ff5a65;font-size:clamp(25px,5vw,40px);font-variant-numeric:tabular-nums}footer{border-top:1px solid #303036;margin-top:30px;padding-top:22px;font-size:14px;color:#a1a1aa}a{color:#fca5a5}
+</style></head>
+<body><main><div class="shield" aria-hidden="true">⚠</div><h1>ATENÇÃO</h1>
+<h2>A exploração sexual de crianças e adolescentes é crime.</h2>
+<p>Esta página é um alerta de conscientização. Crianças devem ser protegidas, nunca exploradas.</p>
+<div class="ip"><small>SEU IP PÚBLICO</small><strong id="ip">Consultando…</strong></div>
+<p id="status">O IP é exibido somente nesta página. Este site não mantém um banco de dados de visitantes.</p>
+<footer>Denuncie suspeitas às autoridades competentes ou pelo <strong>Disque 100</strong>.<br><a href="https://www.gov.br/mdh/pt-br/ondh" rel="noopener noreferrer">Saiba como denunciar</a></footer>
+</main>
+<script>
+(async()=>{const el=document.getElementById('ip');try{const response=await fetch('https://api.ipify.org?format=json',{cache:'no-store'});if(!response.ok)throw Error('indisponível');const data=await response.json();el.textContent=data.ip||'Não disponível'}catch{el.textContent='Não disponível';document.getElementById('status').textContent='Não foi possível consultar o IP. Este site não armazena dados de visitantes.'}})();
+</script></body></html>
